@@ -1,0 +1,94 @@
+.main {
+  position: fixed;
+  display: flex;
+  height: 100vh;
+  border: 1px solid red;
+  margin-top: 1.29vh;
+}
+
+@media screen and (min-width: 1194px) {
+  .main {
+    width: 86.2%;
+    top: 158px;
+  }
+}
+
+@media screen and (max-width: 1194px) and (min-width: 428px) {
+  .main {
+    width: 92%;
+    top: 145px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .main {
+    width: 88.8%;
+    top: 110px;
+  }
+}
+
+.main__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main__list__title {
+  font-size: 1.75rem;
+  margin-bottom: 17px;
+}
+
+@media screen and (min-width: 428px) {
+  .main__list__button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .main__list__button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.main__list__button a > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 17px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  background-size: cover;
+  opacity: 0.5;
+  transition: opacity 250ms;
+  cursor: pointer;
+}
+
+.main__list__button a > span:hover {
+  opacity: 1;
+}
+
+.playlist01 {
+  background-image: url('../../images/playlist-button/Recommended\ \(1\).webp');
+}
+.playlist02 {
+  background-image: url('../../images/playlist-button/beat\ \(2\).webp');
+}
+.playlist03 {
+  background-image: url('../../images/playlist-button/vocal\ \(2\).webp');
+}
+.playlist04 {
+  background-image: url('../../images/playlist-button/effects\ \(2\).webp');
+}
+
+.playlist01.active,
+.playlist02.active,
+.playlist03.active,
+.playlist04.active {
+  opacity: 1;
+}
