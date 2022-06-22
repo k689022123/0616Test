@@ -210,6 +210,12 @@
   width: 193.74px;
   height: 249.82px;
   margin-right: 2.4%;
+  
+  width: 200px;
+		height: 250px;
+		border: 1px solid #80808011;
+		border-radius: 10px;
+		box-shadow: 0px 1px 5px 1px rgba(255, 255, 255, 0.1);
 }
 
 .cartlist__picture section > span p:nth-of-type(1) {
