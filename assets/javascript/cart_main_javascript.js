@@ -148,6 +148,12 @@ transferTitle.onclick = function () {
   transferContent.classList.add('active');
 };
 
+function show() {
+  transferContent.classList.add('active');
+}
+
+show();
+
 function transferOK() {
   alertWord.classList.add('active');
 }
